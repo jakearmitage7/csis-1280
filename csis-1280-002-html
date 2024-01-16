@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #A70101;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My name is Jake</h1>
+  <p>I'm from <b>Vancouver</b> British Columbia</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="https://www.instagram.com/jake.armitage/">Instagram</a>
+  <a href="https://www.facebook.com/jake.armitage.7587">Facebook</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+<img src="./images/1_ig_resize.jpg" alt="HTML5 Icon" style="width:128px;height:128px;">
+    <p> I enjoy photography, editing, working out, and snowboarding.</p>
+  </div>
+  <div class="main">
+    <h2>Background Information</h2>
+    <h5>Life up into this point, Jan 12, 2024</h5>
+<img src="./images/IMG_2250-resize_copy.JPG" alt="HTML5 Icon" style="height:320px;">
+    <p>Work and school..</p>
+    <p>I have had multiple jobs in the tech industry and marketing areas. I was a IT contractor for mutiple years for a few seperate companies including insurance companies. Then moved into affiliate marketing and ecomers sales. Currently I am part time general managing a event company while returning to finish my general business program at douglas.</p>
+    <br>
+    <h2>Fun and free time</h2>
+    <h5>Outside work and school,</h5>
+<img src="./images/IMG_2248_copy.JPG" alt="HTML5 Icon" style="height:320px;">
+    <p>Staying avtive..</p>
+    <p> Majority of my free time revoles around staying active. I enjoy spedning my free time in the gym, playing golf or other sports, and snowboarding. During the last winter season I broke my collar bone and pulled many muscles on the right side of my body. This has changed my routine from things like heavy weights to things such as going on runs with my dog or swimming.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2><footer>
+    <ul>
+      <li>
+        <a href="#" class="social instagram">Instagram</a>
+      </li>
+      <li>
+        <a href="#" class="social facebook">Facebook</a>
+    </ul>
+    <p class="copyright">Copyright 2024, Jake Armitage</p>
+  </footer></h2>
+</div>
+
+</body>
+</html>
